@@ -20,6 +20,8 @@ La série présente trois caractéristiques. On observe d'abord une saisonnalit�
 
 Ce dernier point s'est révélé central dans toute la suite de l'analyse.
 
+Le taux moyen est de 5.28 pour 100 000 habitants (écart-type 5.13), pour une médiane de 4.10. Les valeurs vont de 0.1 à 35.6, et la moitié centrale des semaines se situe entre 1.7 et 7.5. La distribution est très asymétrique vers la droite (skewness de 2.34) et comporte beaucoup de valeurs extrêmes (kurtosis de 8.18) : la plupart des semaines ont un taux faible, et une longue queue correspond aux pics des vagues. Le QQ-plot confirme que la série ne suit pas une loi normale. Cette asymétrie vient surtout de la période 2020-2022, puisque la médiane passe de 7.7 avant juillet 2022 à 2.2 après. Elle annonce des résidus non normaux et constitue un argument de plus pour tester une transformation logarithmique.
+
 ## 4. Stationnarité et différenciation
 
 Un modèle ARIMA suppose une série stationnaire. L'ACF de la série brute décroît lentement, ce qui indique une forte persistance, et elle remonte autour du lag 52, ce qui confirme la saisonnalité annuelle.
